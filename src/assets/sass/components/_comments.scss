@@ -1,0 +1,22 @@
+@use "../abstract/" as *;
+
+.comments {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1rem, 3vw, 1.75rem);
+}
+
+.comment {
+  box-sizing: border-box;
+  padding: 1.75rem;
+  border-radius: 0.5rem;
+  background-color: $clr-primary-200;
+
+  &__text {
+    margin-block: 1.175rem 0;
+    font-size: $fs-400;
+    line-height: 1.4;
+    text-align: center;
+    color: $clr-neutral-200;
+  }
+}

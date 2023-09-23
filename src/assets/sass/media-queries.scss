@@ -1,0 +1,67 @@
+@use "abstract/" as *;
+
+@media screen and (min-width: 61.25em) {
+  .social-proof {
+    padding-block-start: toRem(104);
+    grid-template-columns: 1fr 1fr;
+    background-image: url("../images/bg-pattern-top-desktop.svg"),
+      url("../images/bg-pattern-bottom-desktop.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 37%, 75%;
+    background-position: 0 0, 100% 100%;
+  }
+
+  .hero__title,
+  .hero__excerpt {
+    text-align: left;
+  }
+
+  .hero__title {
+    margin-inline: 0;
+    margin-block-end: toRem(28);
+    max-width: toRem(300);
+  }
+
+  .hero__excerpt {
+    max-width: toRem(380);
+  }
+
+  .raitings {
+    flex-direction: column;
+    align-items: flex-end;
+
+    &__items {
+      flex-direction: row;
+      width: toRem(400);
+
+      &:nth-child(1) {
+        margin-inline-end: 6rem;
+      }
+
+      &:nth-child(2) {
+        margin-inline-end: 3rem;
+      }
+    }
+  }
+
+  .comments {
+    margin-block-start: toRem(24);
+    grid-column: span 2;
+    flex-direction: row;
+  }
+  .comment {
+    height: fit-content;
+
+    &:nth-child(2) {
+      margin-block-start: 1rem;
+    }
+
+    &:nth-child(3) {
+      margin-block-start: 2rem;
+    }
+
+    &__text {
+      text-align: left;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+@use "../abstract/" as *;
+
+.hero {
+  &__title,
+  &__excerpt {
+    text-align: center;
+  }
+
+  &__title {
+    margin-inline: 2rem;
+    margin-block: 0 1rem;
+    letter-spacing: -0.02em;
+    line-height: 0.9;
+    font-size: clamp($fs-600, 5vw, $fs-700);
+    font-weight: 700;
+    color: $clr-primary-200;
+  }
+
+  &__excerpt {
+    margin-block-end: 2.125rem;
+    line-height: 1.5;
+    font-size: $fs-500;
+    font-weight: 500;
+    color: $clr-neutral-300;
+  }
+}

@@ -1,0 +1,28 @@
+@use "../abstract/" as *;
+
+.author {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  align-items: center;
+  font-size: $fs-400;
+
+  &__thumbnail {
+    border-radius: 50%;
+    height: 2.5rem;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    margin-inline-end: 1.125rem;
+    grid-row: span 2;
+  }
+
+  &__name {
+    font-weight: 500;
+    text-decoration: none;
+    color: $clr-neutral-100;
+  }
+
+  &__verified {
+    margin-block: 0;
+    color: $clr-primary-100;
+  }
+}

@@ -1,0 +1,30 @@
+@use "../abstract/" as *;
+
+body {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  background-color: $clr-neutral-300;
+  font-family: $ff-primary;
+  font-size: $fs-400;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.social-proof {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-block: toRem(74) toRem(94);
+  width: min(100%, 1300px);
+  padding-inline: clamp(toRem(22), 10vw, toRem(148));
+  background-color: $clr-neutral-100;
+  background-image: url("../images/bg-pattern-top-mobile.svg"),
+    url("../images/bg-pattern-bottom-mobile.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: min(100%, toRem(450)) auto, 100% 40%;
+  background-position: 0 0, 100% 100%;
+}
